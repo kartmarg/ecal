@@ -18,14 +18,14 @@
 */
 
 /**
- * @file   ecal_monitoring_pb.h
+ * @file   ecal_mon_pb.h
  * @brief  eCAL monitoring interface using structs
 **/
 
 #pragma once
 
 #include <ecal/ecal_os.h>
-#include <ecal/ecal_monitoring_entity.h>
+#include <ecal/ecal_mon_entity.h>
 #include <ecal/types/topic_information.h>
 
 #include <map>

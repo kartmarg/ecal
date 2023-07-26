@@ -107,9 +107,9 @@ if(WIN32)
 endif()
 
 set(ecal_mon_cpp_src
-    src/mon/ecal_monitoring_def.cpp
-    src/mon/ecal_monitoring_impl.cpp
-    src/mon/ecal_monitoring_threads.cpp
+    src/mon/ecal_mon_def.cpp
+    src/mon/ecal_mon_impl.cpp
+    src/mon/ecal_mon_threads.cpp
 )
 
 set(ecal_pubsub_cpp_src
@@ -231,9 +231,9 @@ if(UNIX)
 endif()
 
 set(ecal_mon_header_src
-    src/mon/ecal_monitoring_def.h
-    src/mon/ecal_monitoring_impl.h
-    src/mon/ecal_monitoring_threads.h
+    src/mon/ecal_mon_def.h
+    src/mon/ecal_mon_impl.h
+    src/mon/ecal_mon_threads.h
 )
 
 set(ecal_pubsub_header_src
@@ -323,9 +323,9 @@ set(ecal_header_cmn
     include/ecal/ecal_init.h
     include/ecal/ecal_log.h
     include/ecal/ecal_log_level.h
-    include/ecal/ecal_monitoring.h
-    include/ecal/ecal_monitoring_entity.h
-    include/ecal/ecal_monitoring_struct.h
+    include/ecal/ecal_mon.h
+    include/ecal/ecal_mon_entity.h
+    include/ecal/ecal_mon_struct.h
     include/ecal/ecal_os.h
     include/ecal/ecal_payload_writer.h
     include/ecal/ecal_process.h
@@ -354,7 +354,7 @@ set(ecal_header_cimpl
     include/ecal/cimpl/ecal_event_cimpl.h
     include/ecal/cimpl/ecal_init_cimpl.h
     include/ecal/cimpl/ecal_log_cimpl.h
-    include/ecal/cimpl/ecal_monitoring_cimpl.h
+    include/ecal/cimpl/ecal_mon_cimpl.h
     include/ecal/cimpl/ecal_process_cimpl.h
     include/ecal/cimpl/ecal_proto_dyn_json_subscriber_cimpl.h
     include/ecal/cimpl/ecal_publisher_cimpl.h

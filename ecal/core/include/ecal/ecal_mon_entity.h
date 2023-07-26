@@ -18,7 +18,7 @@
 */
 
 /**
- * @file   ecal_monitoring_entity.h
+ * @file   ecal_mon_entity.h
  * @brief  eCAL monitoring entities
 **/
 

@@ -37,7 +37,7 @@
 #include <ecal/cimpl/ecal_core_cimpl.h>
 #include <ecal/cimpl/ecal_event_cimpl.h>
 #include <ecal/cimpl/ecal_log_cimpl.h>
-#include <ecal/cimpl/ecal_monitoring_cimpl.h>
+#include <ecal/cimpl/ecal_mon_cimpl.h>
 #include <ecal/cimpl/ecal_process_cimpl.h>
 #include <ecal/cimpl/ecal_publisher_cimpl.h>
 #include <ecal/cimpl/ecal_qos_cimpl.h>

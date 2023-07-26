@@ -374,22 +374,22 @@ extern "C"
 /////////////////////////////////////////////////////////
 extern "C"
 {
-  ECALC_API int eCAL_Monitoring_SetExclFilter(const char* filter_)
+  ECALC_API int ecal_mon_SetExclFilter(const char* filter_)
   {
     return(eCAL::Monitoring::SetExclFilter(std::string(filter_)));
   }
 
-  ECALC_API int eCAL_Monitoring_SetInclFilter(const char* filter_)
+  ECALC_API int ecal_mon_SetInclFilter(const char* filter_)
   {
     return(eCAL::Monitoring::SetInclFilter(std::string(filter_)));
   }
 
-  ECALC_API int eCAL_Monitoring_SetFilterState(int state_)
+  ECALC_API int ecal_mon_SetFilterState(int state_)
   {
     return(eCAL::Monitoring::SetFilterState(state_ != 0));
   }
 
-  ECALC_API int eCAL_Monitoring_GetMonitoring(void* buf_, int buf_len_)
+  ECALC_API int ecal_mon_GetMonitoring(void* buf_, int buf_len_)
   {
     std::string buf;
     if(eCAL::Monitoring::GetMonitoring(buf))
@@ -399,7 +399,7 @@ extern "C"
     return(0);
   }
 
-  ECALC_API int eCAL_Monitoring_GetLogging(void* buf_, int buf_len_)
+  ECALC_API int ecal_mon_GetLogging(void* buf_, int buf_len_)
   {
     std::string buf;
     if(eCAL::Monitoring::GetLogging(buf))
@@ -409,12 +409,12 @@ extern "C"
     return(0);
   }
 
-  ECALC_API int eCAL_Monitoring_PubMonitoring(int state_, const char * name_)
+  ECALC_API int ecal_mon_PubMonitoring(int state_, const char * name_)
   {
     return(eCAL::Monitoring::PubMonitoring(state_ != 0, name_));
   }
 
-  ECALC_API int eCAL_Monitoring_PubLogging(int state_, const char * name_)
+  ECALC_API int ecal_mon_PubLogging(int state_, const char * name_)
   {
     return(eCAL::Monitoring::PubLogging(state_ != 0, name_));
   }

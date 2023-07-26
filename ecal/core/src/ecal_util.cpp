@@ -30,7 +30,7 @@
 #include "ecal_process.h"
 #include "ecal_registration_receiver.h"
 #include "pubsub/ecal_pubgate.h"
-#include "mon/ecal_monitoring_def.h"
+#include "mon/ecal_mon_def.h"
 
 #include <stdio.h>
 #include <stdlib.h>

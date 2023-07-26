@@ -23,8 +23,8 @@
 
 #pragma once
 
-#include <ecal/ecal_monitoring_entity.h>
-#include <ecal/ecal_monitoring_struct.h>
+#include <ecal/ecal_mon_entity.h>
+#include <ecal/ecal_mon_struct.h>
 #include <string>
 
 #ifdef _MSC_VER

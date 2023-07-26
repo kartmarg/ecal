@@ -178,7 +178,7 @@
 /* queue size of monitoring/registration events  */
 #define EXP_SHM_MONITORING_QUEUE_SIZE               1024
 /* domain name for shared memory based monitoring/registration */
-#define EXP_SHM_MONITORING_DOMAIN                   "ecal_monitoring"
+#define EXP_SHM_MONITORING_DOMAIN                   "ecal_mon"
 /* memory file access timeout */
 #define EXP_MEMFILE_ACCESS_TIMEOUT                  100
 

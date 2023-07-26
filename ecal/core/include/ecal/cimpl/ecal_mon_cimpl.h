@@ -18,12 +18,12 @@
 */
 
 /**
- * @file   ecal_monitoring_cimpl.h
+ * @file   ecal_mon_cimpl.h
  * @brief  eCAL monitoring c interface
 **/
 
-#ifndef ecal_monitoring_cimpl_h_included
-#define ecal_monitoring_cimpl_h_included
+#ifndef ecal_mon_cimpl_h_included
+#define ecal_mon_cimpl_h_included
 
 #include <ecal/ecal_os.h>
 
@@ -38,7 +38,7 @@ extern "C"
    *
    * @return Zero if succeeded.
   **/
-  ECALC_API int eCAL_Monitoring_SetExclFilter(const char* filter_);
+  ECALC_API int ecal_mon_SetExclFilter(const char* filter_);
 
   /**
    * @brief Set topics filter whitelist regular expression.
@@ -47,7 +47,7 @@ extern "C"
    *
    * @return Zero if succeeded.
   **/
-  ECALC_API int eCAL_Monitoring_SetInclFilter(const char* filter_);
+  ECALC_API int ecal_mon_SetInclFilter(const char* filter_);
 
   /**
    * @brief Switch topics filter using regular expression on/off.
@@ -56,7 +56,7 @@ extern "C"
    *
    * @return Zero if succeeded.
   **/
-  ECALC_API int eCAL_Monitoring_SetFilterState(int state_);
+  ECALC_API int ecal_mon_SetFilterState(int state_);
 
   /**
    * @brief Get monitoring protobuf string. 
@@ -71,7 +71,7 @@ extern "C"
    * @code
    *            // let eCAL allocate memory for the monitoring buffer and return the pointer to 'buf'
    *            void*     buf      = NULL;
-   *            int       buf_len  = eCAL_Monitoring_GetLogging(subscriber_handle, &buf, ECAL_ALLOCATE_4ME);
+   *            int       buf_len  = ecal_mon_GetLogging(subscriber_handle, &buf, ECAL_ALLOCATE_4ME);
    *            if(buf_len > 0)
    *            {
    *              ...
@@ -82,7 +82,7 @@ extern "C"
    *            }
    * @endcode
   **/
-  ECALC_API int eCAL_Monitoring_GetMonitoring(void* buf_, int buf_len_);
+  ECALC_API int ecal_mon_GetMonitoring(void* buf_, int buf_len_);
 
   /**
    * @brief Get logging string.
@@ -93,7 +93,7 @@ extern "C"
    *
    * @return  Logging buffer length or zero if failed. 
   **/
-  ECALC_API int eCAL_Monitoring_GetLogging(void* buf_, int buf_len_);
+  ECALC_API int ecal_mon_GetLogging(void* buf_, int buf_len_);
 
   /**
   * @brief Publish monitoring protobuf message.
@@ -103,7 +103,7 @@ extern "C"
    *
    * @return Zero if succeeded.
   **/
-  ECALC_API int eCAL_Monitoring_PubMonitoring(int state_, const char* name_);
+  ECALC_API int ecal_mon_PubMonitoring(int state_, const char* name_);
 
   /**
    * @brief Publish logging protobuf message.
@@ -113,9 +113,9 @@ extern "C"
    *
    * @return Zero if succeeded.
   **/
-  ECALC_API int eCAL_Monitoring_PubLogging(int state_, const char* name_);
+  ECALC_API int ecal_mon_PubLogging(int state_, const char* name_);
 #ifdef __cplusplus
 }
 #endif /*__cplusplus*/
 
-#endif /*ecal_monitoring_cimpl_h_included*/
+#endif /*ecal_mon_cimpl_h_included*/

@@ -29,7 +29,7 @@
 #include "io/udp_configurations.h"
 
 #include "ecal_config_reader_hlp.h"
-#include "ecal_monitoring_threads.h"
+#include "ecal_mon_threads.h"
 #include "ecal_global_accessors.h"
 
 namespace eCAL

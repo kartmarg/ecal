@@ -23,10 +23,10 @@
 
 #pragma once
 
-#include <ecal/ecal_monitoring_entity.h>
-#include <ecal/ecal_monitoring_struct.h>
+#include <ecal/ecal_mon_entity.h>
+#include <ecal/ecal_mon_struct.h>
 
-#include "ecal_monitoring_threads.h"
+#include "ecal_mon_threads.h"
 #include "ecal_expmap.h"
 #include "io/rcv_sample.h"
 
